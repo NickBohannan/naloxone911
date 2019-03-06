@@ -1,0 +1,16 @@
+{
+  "name": "naloxone911",
+  "version": "1.0.0",
+  "description": "quick naloxone delivery app",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Nick Bohannan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "sass": "^1.17.2"
+  }
+}
