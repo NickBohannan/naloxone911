@@ -55,7 +55,7 @@ body {
   margin: 0 25px 15px 25px;
   padding: 15px 10px;
 }
-.card-form .form-footer a {
+.card-form .form-footer button {
   display: inline-block;
   height: 40px;
   line-height: 40px;
