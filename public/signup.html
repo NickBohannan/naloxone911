@@ -12,19 +12,19 @@
 
 <body>
     <div class="card-form">
-        <form class="signup">
+        <form class="signup" method="POST" action="/signup">
             <div class="form-title">Sign Up</div>
             <div class="form-body">
                 <div class="row">
-                    <input type="text" placeholder="Email Address*">
+                    <input type="text" name="email" placeholder="Email Address*">
                 </div>
                 <div class="row">
-                    <input type="text" placeholder="Phone Number">
+                    <input type="text" name="phone" placeholder="Phone Number">
                 </div>
                 <div class="row">
-                    <input type="text" placeholder="Zip Code 1*">
-                    <input type="text" placeholder="Zip Code 2">
-                    <input type="text" placeholder="Zip Code 3">
+                    <input type="text" name="zip1" placeholder="Zip Code 1*">
+                    <input type="text" name="zip2" placeholder="Zip Code 2">
+                    <input type="text" name="zip3" placeholder="Zip Code 3">
                 </div>
             </div>
             <div class="rule"></div>

@@ -4,12 +4,14 @@
   "description": "quick naloxone delivery app",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server.js"
+    "test": "node server.js"
   },
   "author": "Nick Bohannan",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
     "nodemon": "^1.18.10",
     "pg": "^7.8.2",
     "pg-hstore": "^2.3.2",

@@ -3,11 +3,10 @@ const Sequelize = require('sequelize')
 // initiating database
 let db
 
-if (process.env.HOME === '/Users/nbohannan') {
-    db = new Sequelize('postgres://localhost:5432/naloxone911')
-} else {
-    db = new Sequelize(process.env.DATABASE_URL)
-}
+db = new Sequelize('postgres://localhost:5432/naloxone911', {
+    dialect: 'postgres',
+    url: 'postgres://localhost:5432/naloxone911'
+})
 
 // database schema
 const User = db.define('user', {

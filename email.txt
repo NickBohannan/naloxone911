@@ -1,0 +1,3 @@
+- push notofications for phone number
+- set high priority
+- remove user from database if alerts aren't answered
