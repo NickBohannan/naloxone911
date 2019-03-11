@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/index');
 const nodemailer = require('nodemailer')
-const pw = require('../pw')
+const config = require('../config')
 
 router.get('/', (req, res) => {
     res.render('index')
@@ -25,8 +25,8 @@ router.post('/', (req, res) => {
                 port: 465,
                 secure: true,
                 auth: {
-                    user: 'nbohannan@gmail.com',
-                    pass: pw.emailPass
+                    user: config.email,
+                    pass: config.emailPass
                 }
             })
 

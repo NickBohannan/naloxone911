@@ -1,10 +1,10 @@
 const Sequelize = require('sequelize')
-const pw = require('../pw')
+const config = require('../config')
 
 // initiating database
 let db
 
-db = new Sequelize('naloxone911', 'postgres', pw.dbPass, {
+db = new Sequelize('naloxone911', 'postgres', config.dbPass, {
     host: 'localhost',
     dialect: 'postgres'
 })
