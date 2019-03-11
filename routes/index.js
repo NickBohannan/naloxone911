@@ -70,6 +70,10 @@ router.post('/', (req, res) => {
     }).catch(console.error)
 })
 
+router.get('/signup', (req, res) => {
+    res.render('signup')
+})
+
 router.post('/signup', (req, res, next) => {
     User.create({
         email: req.body.email,
