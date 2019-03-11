@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
                 secure: true,
                 auth: {
                     user: 'nbohannan@gmail.com',
-                    pass: pw
+                    pass: pw.emailPass
                 }
             })
 
