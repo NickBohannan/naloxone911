@@ -1,10 +1,9 @@
 const Sequelize = require('sequelize')
-const config = require('../config')
 
 // initiating database
 let db
 
-db = new Sequelize('naloxone911', 'postgres', config.dbPass, {
+db = new Sequelize('naloxone911', 'postgres', process.env.DB_PASS, {
     host: 'localhost',
     dialect: 'postgres'
 })
