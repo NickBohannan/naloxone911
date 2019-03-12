@@ -17,7 +17,7 @@ const User = db.define('user', {
     },
     // this will probably need some attention
     phone: {
-        type: Sequelize.STRING(10),
+        type: Sequelize.STRING(20),
         unique: true,
         allowNull: true
     },
