@@ -10,7 +10,9 @@ const path = require('path')
 
 const port = process.env.port || 8080
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 
@@ -24,5 +26,4 @@ app.listen(port, () => {
     console.log(process.env.HOME)
 })
 
-//User.sync()
 User.sync()
