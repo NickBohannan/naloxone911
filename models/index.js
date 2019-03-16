@@ -3,10 +3,14 @@ const Sequelize = require('sequelize')
 // initiating database
 let db
 
-db = new Sequelize('naloxone911', 'postgres', process.env.DB_PASS, {
-    host: 'localhost',
-    dialect: 'postgres'
-})
+if (process.env.NODE_ENV == 'production') {
+    db = new Sequelize(process.env.DATABASE_URL)
+} else {
+    db = new Sequelize('naloxone911', 'postgres', process.env.DB_PASS, {
+        host: 'localhost',
+        dialect: 'postgres'
+    })
+}
 
 // database schema
 const User = db.define('user', {
