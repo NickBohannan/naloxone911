@@ -49,7 +49,7 @@ router.post('/', async (req, res) => {
             console.log(message.sid)
         })
 
-        mailer(users, req)
+        //mailer(users, req)
 
     } catch(error) {
         console.error(error)
